@@ -60,7 +60,7 @@ elif pb_select == 'AFC':
 elif pb_select == 'Tie':
     df["Simulated Total p"] = np.where(df["PB"].str[:3] == 'Tie', df["Simulated Total n"] + 1, df["Simulated Total n"])
 else:  
-    df["Simulated Total p "] = df["Simulated Total n"]
+    df["Simulated Total p"] = df["Simulated Total n"]
 
 sb_select = st.selectbox(
     "Super Bowl Champion",
